@@ -1,0 +1,165 @@
+@import '../variables';
+.app {
+  .intro {
+    width: 50%;
+    max-width: 600px;
+    padding: 50px;
+  }
+  h2 {
+    line-height: 70px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+.top-navigation {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  ul {
+    align-items: center;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+     a {
+       color: $black-brown;
+       font-family: 'Sorts Mill Goudy', serif;
+       border-bottom: 2px solid transparent;
+
+       &:hover {
+         color: $aqua;
+       }
+       &.active {
+         color: $aqua;
+         border-bottom: 2px solid $aqua;
+
+       }
+     }
+  }
+  h3 {
+    color: $black-brown;
+    font-family: 'Sorts Mill Goudy', serif;
+  }
+}
+
+.display {
+  height: 550px;
+  width: 100%;
+  margin-bottom: 5px;
+  img {
+    width: 100%; /* width of container */
+    height: 100%; /* height of container */
+    object-fit: cover;
+    object-position: 40% 45%; /* try 20px 10px */
+  }
+}
+
+.about {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  div {
+    position: relative;
+    width: 50%;
+
+    &:nth-of-type(2){
+      padding-right: 50px;
+      p {
+        padding: 50px;
+        max-width: 500px;
+        font-size: 25px;
+        line-height: 40px;
+      }
+    }
+
+    img {
+      padding-left: 50px;
+      width: 80%;
+    }
+  }
+}
+
+.contact {
+  box-sizing: border-box;
+  height: 480px;
+  background: $aqua;
+  width: 100%;
+  padding: 90px 50px;
+  margin-bottom: 5px;
+  p {
+    margin: 10px 0 30px 0;
+    width: 50%;
+    max-width: 600px;
+    line-height: 28px;
+  }
+  h2,p {
+    color: $white;
+  }
+  h2 {
+    margin: 30px 0;
+  }
+  p {
+    font-size: 16px;
+  }
+  button {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    padding: 1.2em 2.004em;
+
+    &:hover {
+      background: $black-brown;
+      color: white;
+    }
+    a {
+      color: inherit; /* blue colors for links too */
+      text-decoration: inherit; /* no underline */
+    }
+
+    &:first-of-type {
+      margin-right: 20px;
+    }
+  }
+}
+
+footer {
+  background: $black-brown;
+  margin-top: 5px;
+  ul {
+    width: 180px;
+    justify-content: space-between;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
+    li {
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      border: 2px solid $aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        filter: invert(79%) sepia(76%) saturate(303%) hue-rotate(111deg) brightness(84%) contrast(88%);
+        height: 35px;
+      }
+    }
+
+    .email {
+      height: 23px;
+      margin-top: 2px;
+    }
+
+    .github {
+      height: 28px;
+    }
+  }
+}
