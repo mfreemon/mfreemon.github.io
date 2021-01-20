@@ -9,11 +9,17 @@ const About = (props) => {
         <img src={yosemite} alt="yosemite"/>
       </div>
       <div>
-        <h3>
-          Raised in the Midwest, Lionel Falodu was drawn to spending as much time
-          as possible outdoors. Currently freelancing for world-renowned nature
-          magazines and award-winning publications.
-        </h3>
+        <p>
+          Texas native but attended university and subsequently have been
+          living in the San Francisco Bay Area for sometime now with intermittent
+          stops in parts of Latin America and Europe.
+        </p>
+        <br/>
+        <p>
+          In my free time I enjoy spending my time outdoors doing pretty much
+          anything outdoors: backpacking, camping
+          and fishing throughout California.
+        </p>
       </div>
     </div>
   );

@@ -12,16 +12,15 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-
-        <div>
+        <div className="myapp">
           <Nav />
           <Route exact path={["/", "/landing"]} component={Display}/>
           <Route path='/about' render={(props) => (<About {...props}/>)} />
           <Route path='/work' component={Work} />
           <ContactUs />
-          <Footer />
         </div>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

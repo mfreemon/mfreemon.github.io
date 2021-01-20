@@ -11,9 +11,15 @@ const Work = () => {
   return (
     <div className="work">
       <div>
-        <h3>I'm a fullstack engineer with more of a frontend bent. I've worked on a diverse
-          range of project ranging from building out initial MVPs for startups, collaborated
-          with teams at Fortune 500 companies to build out application
+        <h3>I'm a fullstack engineer with more of a frontend bent. I've worked with
+          and for companies and startups like Idean and Vungle, helped agencies
+          like Golin deliver awesome web experiences, and contracted with enterprise
+          companies like Autodesk to help deliver new products to market.
+        </h3>
+        <br/>
+        <h3>I have 6 year of experiences as developer and really enjoy working
+          with React but am always exploring new frontend frameworks and expanding
+          my knowledge with server-side development.
         </h3>
       </div>
       <img className="frontend" src={frontend} alt="frontend"/>
