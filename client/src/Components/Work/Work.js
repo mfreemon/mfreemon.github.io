@@ -17,8 +17,8 @@ const Work = () => {
           companies like Autodesk to help deliver new products to market.
         </p>
         <br/>
-        <p>I have over 6 years of experience as developer and really enjoy working
-          with React but am always exploring new frontend frameworks and expanding
+        <p>I have over 6 years of experience as primarily as a JavaScript developer and really enjoy working
+          with React.js, but am always exploring new frontend frameworks and expanding
           my knowledge with server-side development.
         </p>
       </div>

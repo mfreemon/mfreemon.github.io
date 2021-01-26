@@ -18,9 +18,10 @@ function App() {
           <Route path='/about' render={(props) => (<About {...props}/>)} />
           <Route path='/work' component={Work} />
           <ContactUs />
+          <Footer />
         </div>
       </BrowserRouter>
-      <Footer />
+
     </div>
   );
 }
