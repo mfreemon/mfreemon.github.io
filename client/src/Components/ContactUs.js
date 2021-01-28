@@ -6,7 +6,7 @@ const ContactUs = () => {
   <div className="contact">
     <h2>Let's Work Together</h2>
     <p>I'm always looking for new opportunities and am comfortable working internationally
-      and with disbersed teams. Please feel free to get in touch with me and I will
+      and with distributed teams. Please feel free to get in touch with me and I will
       reach out to you shortly!
     </p>
     <button><a href="mailto:dfreemon@gmail.com">Contact Me</a></button>
