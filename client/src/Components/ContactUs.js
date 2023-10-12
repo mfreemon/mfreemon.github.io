@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
   <div className="contact">
     <h2>Let's Work Together</h2>
-    <p>I'm always looking for new opportunities and am comfortable working internationally
+    <p>I'm always looking for new opportunities and am comfortable working both internationally
       and with distributed teams. Please feel free to get in touch with me and I will
       reach out to you shortly!
     </p>
