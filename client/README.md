@@ -29,6 +29,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+
+Creates the the static files and deploys the build for https://mfreemon.github.io/
+https://www.youtube.com/watch?v=4G6O0BIoq6M
+
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
