@@ -1,6 +1,7 @@
 import { ArrowRight, Code, Database, Smartphone, Calendar, MapPin, GraduationCap, Award, Mail, Phone, Send, CheckCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import  profile_photo from './../assets/profile_photo.jpg';
 import './Home.css'
 
 const Home = () => {
@@ -62,7 +63,7 @@ const Home = () => {
   const experience = [
     {
       title: 'Software Engineer',
-      company: 'Creative Circle 360 (Contract)',
+      company: 'Creative Circle 360 (Contrdfvact)',
       period: 'Apr 2024 – Jun 2025',
       description: [
         'Built user login and registration flows for a social community platform using React.js and GraphQL.',
@@ -158,7 +159,7 @@ const Home = () => {
           <div className="hero-photo">
             <div className="photo-container">
               <img 
-                src="/profile-photo.jpg" 
+                src={profile_photo} 
                 alt="Marcus Freemon" 
                 className="profile-photo"
                 onError={(e) => {
@@ -170,7 +171,7 @@ const Home = () => {
                 <div className="placeholder-content">
                   <div className="placeholder-icon">👨‍💻</div>
                   <p>Add your photo here</p>
-                  <p style={{ fontSize: '0.875rem', opacity: 0.7 }}>profile-photo.jpg</p>
+                  <p style={{ fontSize: '0.875rem', opacity: 0.7 }}>{profile_photo}</p>
                 </div>
               </div>
             </div>
