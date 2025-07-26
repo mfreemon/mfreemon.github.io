@@ -198,7 +198,8 @@ const Contact = () => {
         </section>
       </div>
     </div>
+  </div> 
   )
 }
 
-export default Contact 
+export default Contact; 

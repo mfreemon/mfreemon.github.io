@@ -41,12 +41,6 @@ const Home = () => {
       link: 'mailto:dfreemon@gmail.com'
     },
     {
-      icon: Phone,
-      title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
-    },
-    {
       icon: MapPin,
       title: 'Location',
       value: 'Oakland, CA',
@@ -55,15 +49,14 @@ const Home = () => {
   ]
 
   const skills = [
-    { icon: Code, title: 'Frontend Development', description: 'React, Vue, TypeScript' },
-    { icon: Database, title: 'Backend Development', description: 'Node.js, Python, SQL' },
-    { icon: Smartphone, title: 'Mobile Development', description: 'React Native, Flutter' }
+    { icon: Code, title: 'Frontend Development', description: 'React, Vue, JavaScript, TypeScript' },
+    { icon: Database, title: 'Backend Development', description: 'Node.js, Python, SQL, MongoDB' },
   ]
 
   const experience = [
     {
       title: 'Software Engineer',
-      company: 'Creative Circle 360 (Contrdfvact)',
+      company: 'Creative Circle 360 (Contract)',
       period: 'Apr 2024 – Jun 2025',
       description: [
         'Built user login and registration flows for a social community platform using React.js and GraphQL.',
@@ -121,7 +114,7 @@ const Home = () => {
   const technicalSkills = [
     { category: 'Languages', items: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'] },
     { category: 'Frameworks/Libraries', items: ['React.js', 'Redux', 'Angular', 'Node.js', 'GraphQL', 'REST APIs'] },
-    { category: 'Tools', items: ['Git', 'Docker', 'Vite', 'Webpack', 'Figma', 'Chrome DevTools', 'GitHub', 'AI Tools (Copilot, ChatGPT)'] },
+    { category: 'Tools', items: ['Git', 'Docker', 'Vite', 'Webpack', 'Figma', 'Chrome DevTools', 'GitHub', 'AI Tools (Copilot, Cursor, ChatGPT)'] },
     { category: 'Testing', items: ['Jasmine', 'Jest', 'React Testing Library'] },
     { category: 'Other', items: ['Responsive Design', 'Agile', 'Jira', 'Cross-browser compatibility', 'UI/UX best practices'] }
   ]
