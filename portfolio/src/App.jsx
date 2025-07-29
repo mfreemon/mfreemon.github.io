@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Moon, Sun } from 'lucide-react'
+import Footer from './components/Footer'
+import Home from './pages/Home'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isDark, setIsDark] = useState(true)
+
+  const toggleTheme = () => {
+    console.log('Button clicked! Current theme:', isDark ? 'dark' : 'light')
+    setIsDark(!isDark)
+  }
+
+  useEffect(() => {
+    console.log('Theme changed to:', isDark ? 'dark' : 'light')
+    const root = document.documentElement
+    const body = document.body
+    const theme = isDark ? 'dark' : 'light'
+    
+    root.setAttribute('data-theme', theme)
+    body.setAttribute('data-theme', theme)
+    
+    console.log('Set data-theme attribute to:', theme)
+    console.log('Root element:', root)
+    console.log('Body element:', body)
+  }, [isDark])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <Router>
+      <div className="App">
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {isDark ? <Sun size={20} /> : <Moon size={20} />}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to tefgfgst HMR
-        </p>
+        <main className="main-content">
+          <Home />
+        </main>
+        <Footer />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </Router>
   )
 }
 
