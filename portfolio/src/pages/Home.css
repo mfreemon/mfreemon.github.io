@@ -4,26 +4,30 @@
 
 /* Hero Section */
 .hero {
-  padding: 8rem 0 6rem;
+  padding: 3rem 0 2rem;
   background: var(--background);
 }
 
 .hero-content {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  min-height: 80vh;
 }
 
 .hero-text {
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1rem;
@@ -31,14 +35,14 @@
 }
 
 .hero-subtitle {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--text-secondary);
   margin-bottom: 1rem;
   font-weight: 500;
 }
 
 .hero-description {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.7;
   margin-bottom: 2rem;
   color: var(--text-secondary);
@@ -60,8 +64,8 @@
 
 .photo-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: clamp(280px, 30vw, 400px);
+  height: clamp(280px, 30vw, 400px);
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--primary-color);
@@ -251,7 +255,7 @@
 
 /* Style for Tools text in experience descriptions */
 .timeline-content ul li:last-child {
-  color: var(--primary-color) !important;
+  color: #d224ee !important;
 }
 
 /* Skills Section */
@@ -331,7 +335,7 @@
 
 /* What I Do Section */
 .what-i-do {
-  padding: 6rem 0;
+  padding: 3rem 0;
   background: var(--background);
 }
 
@@ -451,8 +455,9 @@
 
 .info-cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .info-card {
@@ -580,17 +585,36 @@
 @media (max-width: 768px) {
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 0 25px;
+    gap: 2rem;
+    padding: 0 1.5rem;
     text-align: center;
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-text {
+    margin: 0 auto;
+    order: 2;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-photo {
+    order: 1;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 6vw, 2.5rem);
   }
 
   .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+  }
+
+  .hero-description {
+    text-align: center;
+    max-width: 100%;
   }
 
   .hero-actions {
@@ -598,8 +622,8 @@
   }
 
   .photo-container {
-    width: 350px;
-    height: 350px;
+    width: clamp(250px, 50vw, 350px);
+    height: clamp(250px, 50vw, 350px);
   }
 
   .info-grid {
@@ -640,6 +664,10 @@
     gap: 3rem;
   }
 
+  .info-cards {
+    flex-direction: column;
+  }
+
   .section-title {
     font-size: 2rem;
   }
@@ -651,16 +679,33 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding: 4rem 0 3rem;
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+    gap: 1.5rem;
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 7vw, 2rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 5vw, 1.25rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-description {
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    margin-bottom: 1.5rem;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: center;
+    gap: 0.75rem;
   }
 
   .btn {
@@ -670,7 +715,7 @@
   }
 
   .photo-container {
-    width: 280px;
-    height: 280px;
+    width: clamp(200px, 60vw, 280px);
+    height: clamp(200px, 60vw, 280px);
   }
 } 

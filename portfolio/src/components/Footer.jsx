@@ -5,17 +5,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Mail,
-      href: 'mailto:marcus.freemon@gmail.com',
+      href: 'mailto:dfreemon.freemon@gmail.com',
       label: 'Email'
     },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/yourprofile',
+      href: 'https://www.linkedin.com/in/marcus-freemon/',
       label: 'LinkedIn'
     },
     {
       icon: Github,
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/mfreemon',
       label: 'GitHub'
     }
   ]
@@ -38,7 +38,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="footer-text">
-          <p>&copy; 2024 Marcus Freemon. All rights reserved.</p>
+          <p>&copy; 2025 Marcus Freemon. All rights reserved.</p>
         </div>
       </div>
     </footer>

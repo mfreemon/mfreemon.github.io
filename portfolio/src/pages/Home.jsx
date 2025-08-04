@@ -134,12 +134,13 @@ const Home = () => {
             <h2 className="hero-subtitle">I build things for the web.</h2>
             <p className="hero-description">
                  Software Engineer with 7+ years of experience specializing in modern front-end development 
-                 using React.js, Redux, and TypeScript. Proven track record of delivering scalable and 
+                 using HTML, CSS, JavaScript/TypeScript and frontend frameworks like React, Angular, & Vue. 
+                 Proven track record of delivering scalable and 
                  responsive web applications in Agile environments. Passionate about UI/UX, clean code, 
                  and performance optimization. Comfortable working full-stack and collaborating 
                  cross-functionally.
             </p>
-            <div className="hero-actions">
+            {/* <div className="hero-actions">
               <Link to="/work" className="btn btn-primary">
                 View My Work
                 <ArrowRight size={20} />
@@ -147,7 +148,7 @@ const Home = () => {
               <Link to="/contact" className="btn btn-secondary">
                 Get In Touch
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="hero-photo">
             <div className="photo-container">
@@ -173,12 +174,12 @@ const Home = () => {
       </section>
 
       {/* Personal Info */}
-      <section className="personal-info">
+      {/* <section className="personal-info">
         <div className="container">
           <div className="info-grid">
             <div className="info-item">
               <Calendar size={20} />
-              <span>7+ years experience</span>
+              <span>9+ years experience</span>
             </div>
             <div className="info-item">
               <MapPin size={20} />
@@ -194,7 +195,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* What I Do Section */}
       <section className="what-i-do">
@@ -276,7 +277,7 @@ const Home = () => {
           </p> 
           <div className="contact-content">
             {/* Contact Info */}
-            <div className="contact-info">
+           
               <div className="info-cards">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="info-card">
@@ -296,7 +297,7 @@ const Home = () => {
                   </div>
                 ))}
               </div>
-            </div>
+          
 
             {/* Contact Form
             <div className="contact-form">
