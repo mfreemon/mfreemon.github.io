@@ -133,7 +133,7 @@ const Home = () => {
             </h1>
             <h2 className="hero-subtitle">I build things for the web.</h2>
             <p className="hero-description">
-                 Software Engineer with 7+ years of experience specializing in modern front-end development 
+                 Software Engineer with 9+ years of experience specializing in modern front-end development 
                  using HTML, CSS, JavaScript/TypeScript and frontend frameworks like React, Angular, & Vue. 
                  Proven track record of delivering scalable and 
                  responsive web applications in Agile environments. Passionate about UI/UX, clean code, 
