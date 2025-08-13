@@ -11,10 +11,10 @@
 .hero-content {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 7rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
   min-height: 80vh;
 }
@@ -417,7 +417,7 @@
 
 /* Contact Section */
 .contact {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background: var(--background);
 }
 
@@ -433,7 +433,7 @@
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -458,6 +458,7 @@
   flex-direction: row;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .info-card {
@@ -468,6 +469,7 @@
   background: var(--background-alt);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
+  width: 250px;
   transition: var(--transition);
 }
 
@@ -664,9 +666,9 @@
     gap: 3rem;
   }
 
-  .info-cards {
+  /* .info-cards {
     flex-direction: column;
-  }
+  } */
 
   .section-title {
     font-size: 2rem;
