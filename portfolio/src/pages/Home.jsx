@@ -122,7 +122,7 @@ const Home = () => {
     {
       title: "Front-End Developer",
       company: "Idean",
-      period: "Jan 2018 – Jun 2018",
+      period: "May 2015 – Mar 2018",
       description: [
         "Developed responsive web applications for clients using modern JavaScript frameworks.",
         "Collaborated with design teams to implement pixel-perfect UI components.",
@@ -132,8 +132,8 @@ const Home = () => {
     },
     {
       title: "Front-End Developer",
-      company: "Various Contract Positions",
-      period: "2017 – 2018",
+      company: "various contracts (Autodesk, TitleNine, Compare Networks",
+      period: "Nov 2014 – Mar 2015",
       description: [
         "Built custom web applications and e-commerce solutions for diverse client needs.",
         "Developed responsive websites and interactive user interfaces.",
