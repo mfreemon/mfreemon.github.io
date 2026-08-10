@@ -1,123 +1,192 @@
-import { ArrowRight, Code, Database, Smartphone, Calendar, MapPin, GraduationCap, Award, Mail, Phone, Send, CheckCircle } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import  profile_photo from './../assets/profile_photo.jpg';
-import './Home.css'
+import {
+  ArrowRight,
+  Code,
+  Database,
+  Smartphone,
+  Calendar,
+  MapPin,
+  GraduationCap,
+  Award,
+  Mail,
+  Phone,
+  Send,
+  CheckCircle,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import profile_photo from "./../assets/profile_photo.jpg";
+import "./Home.css";
 
 const Home = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
+    e.preventDefault();
+    setIsSubmitting(true);
+
     // Simulate form submission
     setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormData({ name: '', email: '', subject: '', message: '' })
-    }, 2000)
-  }
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    }, 2000);
+  };
 
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
-      value: 'dfreemon@gmail.com',
-      link: 'mailto:dfreemon@gmail.com'
+      title: "Email",
+      value: "dfreemon@gmail.com",
+      link: "mailto:dfreemon@gmail.com",
     },
     {
       icon: MapPin,
-      title: 'Location',
-      value: 'Oakland, CA',
-      link: null
-    }
-  ]
+      title: "Location",
+      value: "Oakland, CA",
+      link: null,
+    },
+  ];
 
   const skills = [
-    { icon: Code, title: 'Frontend Development', description: 'React, Vue, JavaScript, TypeScript' },
-    { icon: Database, title: 'Backend Development', description: 'Node.js, Python, SQL, MongoDB' },
-  ]
+    {
+      icon: Code,
+      title: "Frontend Development",
+      description: "React, Vue, JavaScript, TypeScript",
+    },
+    {
+      icon: Database,
+      title: "Backend Development",
+      description: "Node.js, Python, SQL, MongoDB",
+    },
+  ];
 
   const experience = [
     {
-      title: 'Software Engineer',
-      company: 'Creative Circle 360 (Contract)',
-      period: 'Apr 2024 – Jun 2025',
+      title: "Senior Software Engineer(contract)",
+      company: "Apple",
+      period: "Nov 2025 – current",
       description: [
-        'Built user login and registration flows for a social community platform using React.js and GraphQL.',
-        'Created embedded surveys to match users with relevant communities based on their input.',
-        'Developed a proof of concept integrated with Bettermode to enhance community engagement.',
-        'Tools: ReactJS, Redux, JavaScript, HTML5, CSS3, GraphQL'
-      ]
+        "Led engineering for an internal Security Threat Modeling platform used to safeguard code deployments across global teams, evolving it from a small initiative into a core security workflow.",
+        "Transformed a previously manual threat modeling process into a fully integrated LLM-powered workfl ow using multiple AI agents to generate comprehensive STRIDE-based threat models and recommended security remediations.",
+        "Built an end-to-end AI analysis pipeline that ingests Git repositories and automatically generates threat model diagrams and analysis, signifi cantly reducing manual analysis time and improving consistency.",
+        "Tools: ReactJS, JavaScript/TypeScript, HTML5, CSS3, Node.js, Python, Postgres",
+      ],
     },
     {
-      title: 'Senior Front-End Engineer',
-      company: 'Nielsen/Gracenote',
-      period: 'May 2021 – Nov 2023',
+      title: "Software Engineer",
+      company: "Creative Circle 360 (Contract)",
+      period: "Apr 2024 – Jun 2025",
       description: [
-        'Developed the Nielsen One B2B SaaS dashboard application to summarize large data sets.',
-        'Collaborated with designers to create a UI style guide, reducing dev time for new features by 30%.',
-        'Enhanced performance and maintainability using reusable components and optimized rendering.',
-        'Tools: ReactJS, Redux, JavaScript/TypeScript, HTML5, CSS3'
-      ]
+        "Built user login and registration flows for a social community platform using React.js and GraphQL.",
+        "Created embedded surveys to match users with relevant communities based on their input.",
+        "Developed a proof of concept integrated with Bettermode to enhance community engagement.",
+        "Tools: ReactJS, Redux, JavaScript, HTML5, CSS3, GraphQL",
+      ],
     },
     {
-      title: 'Software Engineer',
-      company: 'Vungle',
-      period: 'Jun 2018 – Jun 2020',
+      title: "Senior Front-End Engineer",
+      company: "Nielsen/Gracenote",
+      period: "May 2021 – Nov 2023",
       description: [
-        'Migrated legacy dashboards to modern ReactJS architecture, reducing tech debt by 40%.',
-        'Improved filtering and navigation functionality to enhance workflow efficiency by 20%.',
-        'Spearheaded efforts to consolidate UI features into component libraries.',
-        'Tools: ReactJS, Redux, Node.js, JavaScript, HTML5, CSS3'
-      ]
+        "Developed the Nielsen One B2B SaaS dashboard application to summarize large data sets.",
+        "Collaborated with designers to create a UI style guide, reducing dev time for new features by 30%.",
+        "Enhanced performance and maintainability using reusable components and optimized rendering.",
+        "Tools: ReactJS, Redux, JavaScript/TypeScript, HTML5, CSS3",
+      ],
     },
     {
-      title: 'Front-End Developer',
-      company: 'Idean',
-      period: 'Jan 2018 – Jun 2018',
+      title: "Software Engineer",
+      company: "Vungle",
+      period: "Jun 2018 – Jun 2020",
       description: [
-        'Developed responsive web applications for clients using modern JavaScript frameworks.',
-        'Collaborated with design teams to implement pixel-perfect UI components.',
-        'Worked on multiple client projects simultaneously, delivering high-quality solutions.',
-        'Tools: ReactJS, JavaScript, HTML5, CSS3, Responsive Design'
-      ]
+        "Migrated legacy dashboards to modern ReactJS architecture, reducing tech debt by 40%.",
+        "Improved filtering and navigation functionality to enhance workflow efficiency by 20%.",
+        "Spearheaded efforts to consolidate UI features into component libraries.",
+        "Tools: ReactJS, Redux, Node.js, JavaScript, HTML5, CSS3",
+      ],
     },
     {
-      title: 'Front-End Developer',
-      company: 'Various Contract Positions',
-      period: '2017 – 2018',
+      title: "Front-End Developer",
+      company: "Idean",
+      period: "Jan 2018 – Jun 2018",
       description: [
-        'Built custom web applications and e-commerce solutions for diverse client needs.',
-        'Developed responsive websites and interactive user interfaces.',
-        'Collaborated with clients to understand requirements and deliver tailored solutions.',
-        'Tools: JavaScript, HTML5, CSS3, jQuery, Responsive Design'
-      ]
-    }
-  ]
+        "Developed responsive web applications for clients using modern JavaScript frameworks.",
+        "Collaborated with design teams to implement pixel-perfect UI components.",
+        "Worked on multiple client projects simultaneously, delivering high-quality solutions.",
+        "Tools: ReactJS, JavaScript, HTML5, CSS3, Responsive Design",
+      ],
+    },
+    {
+      title: "Front-End Developer",
+      company: "Various Contract Positions",
+      period: "2017 – 2018",
+      description: [
+        "Built custom web applications and e-commerce solutions for diverse client needs.",
+        "Developed responsive websites and interactive user interfaces.",
+        "Collaborated with clients to understand requirements and deliver tailored solutions.",
+        "Tools: JavaScript, HTML5, CSS3, jQuery, Responsive Design",
+      ],
+    },
+  ];
 
   const technicalSkills = [
-    { category: 'Languages', items: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'] },
-    { category: 'Frameworks/Libraries', items: ['React.js', 'Redux', 'Angular', 'Node.js', 'GraphQL', 'REST APIs'] },
-    { category: 'Tools', items: ['Git', 'Docker', 'Vite', 'Webpack', 'Figma', 'Chrome DevTools', 'GitHub', 'AI Tools (Copilot, Cursor, ChatGPT)'] },
-    { category: 'Testing', items: ['Jasmine', 'Jest', 'React Testing Library'] },
-    { category: 'Other', items: ['Responsive Design', 'Agile', 'Jira', 'Cross-browser compatibility', 'UI/UX best practices'] }
-  ]
+    {
+      category: "Languages",
+      items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
+    },
+    {
+      category: "Frameworks/Libraries",
+      items: [
+        "React.js",
+        "Redux",
+        "Angular",
+        "Node.js",
+        "GraphQL",
+        "REST APIs",
+      ],
+    },
+    {
+      category: "Tools",
+      items: [
+        "Git",
+        "Docker",
+        "Vite",
+        "Webpack",
+        "Figma",
+        "Chrome DevTools",
+        "GitHub",
+        "AI Tools (Copilot, Cursor, ChatGPT)",
+      ],
+    },
+    {
+      category: "Testing",
+      items: ["Jasmine", "Jest", "React Testing Library"],
+    },
+    {
+      category: "Other",
+      items: [
+        "Responsive Design",
+        "Agile",
+        "Jira",
+        "Cross-browser compatibility",
+        "UI/UX best practices",
+      ],
+    },
+  ];
 
   return (
     <div className="home">
@@ -125,20 +194,25 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <div className="hero-text">
-            <p style={{ color: 'var(--primary-color)', marginBottom: '1rem', fontSize: '1rem' }}>
+            <p
+              style={{
+                color: "var(--primary-color)",
+                marginBottom: "1rem",
+                fontSize: "1rem",
+              }}
+            >
               Hi, my name is
             </p>
-            <h1 className="hero-title">
-              Marcus Freemon.
-            </h1>
+            <h1 className="hero-title">Marcus Freemon.</h1>
             <h2 className="hero-subtitle">I build things for the web.</h2>
             <p className="hero-description">
-                 Software Engineer with 9+ years of experience specializing in modern front-end development 
-                 using HTML, CSS, JavaScript/TypeScript and frontend frameworks like React, Angular, & Vue. 
-                 Proven track record of delivering scalable and 
-                 responsive web applications in Agile environments. Passionate about UI/UX, clean code, 
-                 and performance optimization. Comfortable working full-stack and collaborating 
-                 cross-functionally.
+              Software Engineer with 9+ years of experience specializing in
+              modern front-end development using HTML, CSS,
+              JavaScript/TypeScript and frontend frameworks like React, Angular,
+              & Vue. Proven track record of delivering scalable and responsive
+              web applications in Agile environments. Passionate about UI/UX,
+              clean code, and performance optimization. Comfortable working
+              full-stack and collaborating cross-functionally.
             </p>
             {/* <div className="hero-actions">
               <Link to="/work" className="btn btn-primary">
@@ -152,20 +226,22 @@ const Home = () => {
           </div>
           <div className="hero-photo">
             <div className="photo-container">
-              <img 
-                src={profile_photo} 
-                alt="Marcus Freemon" 
+              <img
+                src={profile_photo}
+                alt="Marcus Freemon"
                 className="profile-photo"
                 onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'block';
+                  e.target.style.display = "none";
+                  e.target.nextSibling.style.display = "block";
                 }}
               />
-              <div className="photo-placeholder" style={{ display: 'none' }}>
+              <div className="photo-placeholder" style={{ display: "none" }}>
                 <div className="placeholder-content">
                   <div className="placeholder-icon">👨‍💻</div>
                   <p>Add your photo here</p>
-                  <p style={{ fontSize: '0.875rem', opacity: 0.7 }}>{profile_photo}</p>
+                  <p style={{ fontSize: "0.875rem", opacity: 0.7 }}>
+                    {profile_photo}
+                  </p>
                 </div>
               </div>
             </div>
@@ -230,7 +306,9 @@ const Home = () => {
                     <h3 className="skill-category">{skillGroup.category}</h3>
                     <div className="skill-tags">
                       {skillGroup.items.map((skill, skillIndex) => (
-                        <span key={skillIndex} className="skill-tag">{skill}</span>
+                        <span key={skillIndex} className="skill-tag">
+                          {skill}
+                        </span>
                       ))}
                     </div>
                   </div>
@@ -252,7 +330,16 @@ const Home = () => {
                       {Array.isArray(job.description) ? (
                         <ul>
                           {job.description.map((desc, i) => (
-                            <li key={i} style={{ color: 'var(--text-secondary)', marginBottom: '0.5rem', fontSize: '1rem' }}>{desc}</li>
+                            <li
+                              key={i}
+                              style={{
+                                color: "var(--text-secondary)",
+                                marginBottom: "0.5rem",
+                                fontSize: "1rem",
+                              }}
+                            >
+                              {desc}
+                            </li>
                           ))}
                         </ul>
                       ) : (
@@ -272,32 +359,32 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">Get In Touch</h2>
           <p>
-              Whether you have a question about my work, want to discuss a potential project, 
-              or just want to say hello, I'd love to hear from you.
-          </p> 
+            Whether you have a question about my work, want to discuss a
+            potential project, or just want to say hello, I'd love to hear from
+            you.
+          </p>
           <div className="contact-content">
             {/* Contact Info */}
-           
-              <div className="info-cards">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="info-card">
-                    <div className="info-icon">
-                      <info.icon size={24} />
-                    </div>
-                    <div className="info-content">
-                      <h4>{info.title}</h4>
-                      {info.link ? (
-                        <a href={info.link} className="info-link">
-                          {info.value}
-                        </a>
-                      ) : (
-                        <span>{info.value}</span>
-                      )}
-                    </div>
+
+            <div className="info-cards">
+              {contactInfo.map((info, index) => (
+                <div key={index} className="info-card">
+                  <div className="info-icon">
+                    <info.icon size={24} />
                   </div>
-                ))}
-              </div>
-          
+                  <div className="info-content">
+                    <h4>{info.title}</h4>
+                    {info.link ? (
+                      <a href={info.link} className="info-link">
+                        {info.value}
+                      </a>
+                    ) : (
+                      <span>{info.value}</span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
 
             {/* Contact Form
             <div className="contact-form">
@@ -307,7 +394,7 @@ const Home = () => {
                   <CheckCircle size={48} />
                   <h4>Message Sent!</h4>
                   <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
-                  <button 
+                  <button
                     onClick={() => setIsSubmitted(false)}
                     className="btn btn-secondary"
                   >
@@ -368,8 +455,8 @@ const Home = () => {
                     ></textarea>
                   </div>
 
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     className="btn btn-primary"
                     disabled={isSubmitting}
                   >
@@ -392,7 +479,7 @@ const Home = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home 
+export default Home;

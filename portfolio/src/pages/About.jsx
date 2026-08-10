@@ -1,69 +1,117 @@
-import { Calendar, MapPin, GraduationCap, Award } from 'lucide-react'
-import './About.css'
+import { Calendar, MapPin, GraduationCap, Award } from "lucide-react";
+import "./About.css";
 
 const About = () => {
   const experience = [
     {
-      title: 'Software Engineer',
-      company: 'Creative Circle 360 (Contract)',
-      period: 'Apr 2024 – Jun 2025',
+      title: "Senior Software Engineer(contract)",
+      company: "Apple",
+      period: "Apr 2024 – Jun 2025",
       description: [
-        'Built user login and registration flows for a social community platform using React.js and GraphQL.',
-        'Created embedded surveys to match users with relevant communities based on their input.',
-        'Developed a proof of concept integrated with Bettermode to enhance community engagement.',
-        'Tools: ReactJS, Redux, JavaScript, HTML5, CSS3, GraphQL'
-      ]
+        "Led engineering for an internal Security Threat Modeling platform used to safeguard code deployments across global teams, evolving it from a small initiative into a core security workflow.",
+        "Transformed a previously manual threat modeling process into a fully integrated LLM-powered workfl ow using multiple AI agents to generate comprehensive STRIDE-based threat models and recommended security remediations.",
+        "Built an end-to-end AI analysis pipeline that ingests Git repositories and automatically generates threat model diagrams and analysis, signifi cantly reducing manual analysis time and improving consistency.",
+        "Tools: ReactJS, JavaScript/TypeScript, HTML5, CSS3, Node.js, Python, Postgres",
+      ],
     },
     {
-      title: 'Senior Front-End Engineer',
-      company: 'Nielsen/Gracenote',
-      period: 'May 2021 – Nov 2023',
+      title: "Software Engineer",
+      company: "Creative Circle 360 (contract)",
+      period: "Apr 2024 – Jun 2025",
       description: [
-        'Developed the Nielsen One B2B SaaS dashboard application to summarize large data sets.',
-        'Collaborated with designers to create a UI style guide, reducing dev time for new features by 30%.',
-        'Enhanced performance and maintainability using reusable components and optimized rendering.',
-        'Tools: ReactJS, Redux, JavaScript/TypeScript, HTML5, CSS3'
-      ]
+        "Built user login and registration flows for a social community platform using React.js and GraphQL.",
+        "Created embedded surveys to match users with relevant communities based on their input.",
+        "Developed a proof of concept integrated with Bettermode to enhance community engagement.",
+        "Tools: ReactJS, Redux, JavaScript, HTML5, CSS3, GraphQL",
+      ],
     },
     {
-      title: 'Software Engineer',
-      company: 'Vungle',
-      period: 'Jun 2018 – Jun 2020',
+      title: "Senior Front-End Engineer",
+      company: "Nielsen/Gracenote",
+      period: "May 2021 – Nov 2023",
       description: [
-        'Migrated legacy dashboards to modern ReactJS architecture, reducing tech debt by 40%.',
-        'Improved filtering and navigation functionality to enhance workflow efficiency by 20%.',
-        'Spearheaded efforts to consolidate UI features into component libraries.',
-        'Tools: ReactJS, Redux, Node.js, JavaScript, HTML5, CSS3'
-      ]
+        "Developed the Nielsen One B2B SaaS dashboard application to summarize large data sets.",
+        "Collaborated with designers to create a UI style guide, reducing dev time for new features by 30%.",
+        "Enhanced performance and maintainability using reusable components and optimized rendering.",
+        "Tools: ReactJS, Redux, JavaScript/TypeScript, HTML5, CSS3",
+      ],
     },
     {
-      title: 'Front-End Engineer',
-      company: 'Idean',
-      period: 'May 2015 – Mar 2018',
+      title: "Software Engineer",
+      company: "Vungle",
+      period: "Jun 2018 – Jun 2020",
       description: [
-        'Collaborated with UI/UX and visual designers to implement SPA features from wireframes.',
-        'Maintained cross-browser compatibility and responsive design across multiple projects.'
-      ]
+        "Migrated legacy dashboards to modern ReactJS architecture, reducing tech debt by 40%.",
+        "Improved filtering and navigation functionality to enhance workflow efficiency by 20%.",
+        "Spearheaded efforts to consolidate UI features into component libraries.",
+        "Tools: ReactJS, Redux, Node.js, JavaScript, HTML5, CSS3",
+      ],
     },
     {
-      title: 'Front-End Engineer (Contract Roles)',
-      company: 'Title Nine, Autodesk, CompareNetworks',
-      period: 'Nov 2014 – May 2015',
+      title: "Front-End Engineer",
+      company: "Idean",
+      period: "May 2015 – Mar 2018",
       description: [
-        'Title Nine: Built landing pages from PSD assets, aligned to marketing campaigns.',
-        'Autodesk: Front-end engineering for marketing and product pages.',
-        'CompareNetworks: Front-end engineering (dates not listed).'
-      ]
-    }
-  ]
+        "Collaborated with UI/UX and visual designers to implement SPA features from wireframes.",
+        "Maintained cross-browser compatibility and responsive design across multiple projects.",
+      ],
+    },
+    {
+      title: "Front-End Engineer (Contract Roles)",
+      company: "Title Nine, Autodesk, CompareNetworks",
+      period: "Nov 2014 – May 2015",
+      description: [
+        "Title Nine: Built landing pages from PSD assets, aligned to marketing campaigns.",
+        "Autodesk: Front-end engineering for marketing and product pages.",
+        "CompareNetworks: Front-end engineering (dates not listed).",
+      ],
+    },
+  ];
 
   const skills = [
-    { category: 'Languages', items: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'] },
-    { category: 'Frameworks/Libraries', items: ['React.js', 'Redux', 'Angular', 'Node.js', 'GraphQL', 'REST APIs'] },
-    { category: 'Tools', items: ['Git', 'Docker', 'Vite', 'Webpack', 'Figma', 'Chrome DevTools', 'GitHub', 'AI Tools (Copilot, ChatGPT)'] },
-    { category: 'Testing', items: ['Jasmine', 'Jest', 'React Testing Library'] },
-    { category: 'Other', items: ['Responsive Design', 'Agile', 'Jira', 'Cross-browser compatibility', 'UI/UX best practices'] }
-  ]
+    {
+      category: "Languages",
+      items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
+    },
+    {
+      category: "Frameworks/Libraries",
+      items: [
+        "React.js",
+        "Redux",
+        "Angular",
+        "Node.js",
+        "GraphQL",
+        "REST APIs",
+      ],
+    },
+    {
+      category: "Tools",
+      items: [
+        "Git",
+        "Docker",
+        "Vite",
+        "Webpack",
+        "Figma",
+        "Chrome DevTools",
+        "GitHub",
+        "AI Tools (Copilot, ChatGPT)",
+      ],
+    },
+    {
+      category: "Testing",
+      items: ["Jasmine", "Jest", "React Testing Library"],
+    },
+    {
+      category: "Other",
+      items: [
+        "Responsive Design",
+        "Agile",
+        "Jira",
+        "Cross-browser compatibility",
+        "UI/UX best practices",
+      ],
+    },
+  ];
 
   return (
     <div className="about">
@@ -72,7 +120,12 @@ const About = () => {
         <section className="about-header">
           <h1 className="page-title">About Me</h1>
           <p className="page-subtitle">
-            Software Engineer with 7+ years of experience specializing in modern front-end development using React.js, Redux, and TypeScript. Proven track record of delivering scalable and responsive web applications in Agile environments. Passionate about UI/UX, clean code, and performance optimization. Comfortable working full-stack and collaborating cross-functionally.
+            Software Engineer with 7+ years of experience specializing in modern
+            front-end development using React.js, Redux, and TypeScript. Proven
+            track record of delivering scalable and responsive web applications
+            in Agile environments. Passionate about UI/UX, clean code, and
+            performance optimization. Comfortable working full-stack and
+            collaborating cross-functionally.
           </p>
         </section>
 
@@ -103,10 +156,16 @@ const About = () => {
           <h2>My Story</h2>
           <div className="bio-content">
             <p>
-              I’m a software engineer passionate about building scalable, performant, and user-friendly web applications. My experience spans startups, large companies, and contract roles, always with a focus on clean code and great user experience.
+              I’m a software engineer passionate about building scalable,
+              performant, and user-friendly web applications. My experience
+              spans startups, large companies, and contract roles, always with a
+              focus on clean code and great user experience.
             </p>
             <p>
-              I thrive in collaborative, cross-functional teams and enjoy mentoring, code reviews, and learning new technologies. My toolkit includes React, Redux, TypeScript, Node.js, and a strong foundation in UI/UX best practices.
+              I thrive in collaborative, cross-functional teams and enjoy
+              mentoring, code reviews, and learning new technologies. My toolkit
+              includes React, Redux, TypeScript, Node.js, and a strong
+              foundation in UI/UX best practices.
             </p>
           </div>
         </section>
@@ -125,7 +184,16 @@ const About = () => {
                   {Array.isArray(job.description) ? (
                     <ul>
                       {job.description.map((desc, i) => (
-                        <li key={i} style={{ color: 'var(--text-secondary)', marginBottom: '0.5rem', fontSize: '1rem' }}>{desc}</li>
+                        <li
+                          key={i}
+                          style={{
+                            color: "var(--text-secondary)",
+                            marginBottom: "0.5rem",
+                            fontSize: "1rem",
+                          }}
+                        >
+                          {desc}
+                        </li>
                       ))}
                     </ul>
                   ) : (
@@ -146,7 +214,9 @@ const About = () => {
                 <h3 className="skill-category">{skillGroup.category}</h3>
                 <div className="skill-tags">
                   {skillGroup.items.map((skill, skillIndex) => (
-                    <span key={skillIndex} className="skill-tag">{skill}</span>
+                    <span key={skillIndex} className="skill-tag">
+                      {skill}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -155,7 +225,7 @@ const About = () => {
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About 
+export default About;
