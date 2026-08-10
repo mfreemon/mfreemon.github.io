@@ -132,7 +132,7 @@ const Home = () => {
     },
     {
       title: "Front-End Developer",
-      company: "various contracts (Autodesk, TitleNine, Compare Networks",
+      company: "various contracts (Autodesk, TitleNine, Compare Networks)",
       period: "Nov 2014 – Mar 2015",
       description: [
         "Built custom web applications and e-commerce solutions for diverse client needs.",
