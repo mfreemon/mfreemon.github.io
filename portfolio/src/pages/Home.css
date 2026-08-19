@@ -84,7 +84,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right 20%;
+  object-position: left 10%;
   border-radius: 50%;
 }
 
@@ -737,4 +737,4 @@
     width: clamp(200px, 60vw, 280px);
     height: clamp(200px, 60vw, 280px);
   }
-} 
+}

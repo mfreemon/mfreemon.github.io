@@ -14,7 +14,8 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import profile_photo from "./../assets/profile_photo.jpg";
+import Yosemite_Marcus from "./../assets/Yosemite_Marcus.jpg";
+
 import "./Home.css";
 
 const Home = () => {
@@ -228,7 +229,7 @@ const Home = () => {
           <div className="hero-photo">
             <div className="photo-container">
               <img
-                src={profile_photo}
+                src={Yosemite_Marcus}
                 alt="Marcus Freemon"
                 className="profile-photo"
                 onError={(e) => {
@@ -241,7 +242,7 @@ const Home = () => {
                   <div className="placeholder-icon">👨‍💻</div>
                   <p>Add your photo here</p>
                   <p style={{ fontSize: "0.875rem", opacity: 0.7 }}>
-                    {profile_photo}
+                    {Yosemite_Marcus}
                   </p>
                 </div>
               </div>
