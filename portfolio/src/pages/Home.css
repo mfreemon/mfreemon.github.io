@@ -253,6 +253,23 @@
   line-height: 1.6;
 }
 
+/* Dashes for experience descriptions */
+.timeline-content ul {
+  list-style: none;
+  padding-left: 1.25rem;
+}
+
+.timeline-content ul li {
+  position: relative;
+}
+
+.timeline-content ul li:not(:last-child)::before {
+  content: "-";
+  position: absolute;
+  left: -1.25rem;
+  color: var(--primary-color);
+}
+
 /* Style for Tools text in experience descriptions */
 .timeline-content ul li:last-child {
   color: #d224ee !important;

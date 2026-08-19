@@ -76,25 +76,27 @@ const Home = () => {
 
   const experience = [
     {
-      title: "Senior Software Engineer(contract)",
-      company: "Apple",
+      title: "Senior Software Engineer",
+      company: "Apple (contract)",
       period: "Nov 2025 – current",
       description: [
-        "Led engineering for an internal Security Threat Modeling platform used to safeguard code deployments across global teams, evolving it from a small initiative into a core security workflow.",
-        "Transformed a previously manual threat modeling process into a fully integrated LLM-powered workfl ow using multiple AI agents to generate comprehensive STRIDE-based threat models and recommended security remediations.",
-        "Built an end-to-end AI analysis pipeline that ingests Git repositories and automatically generates threat model diagrams and analysis, signifi cantly reducing manual analysis time and improving consistency.",
-        "Tools: ReactJS, JavaScript/TypeScript, HTML5, CSS3, Node.js, Python, Postgres",
+        "Led development of an AI-powered threat modeling platform used to secure code deployments across internal teams, transforming a manual review process into an automated, scalable workflow",
+        "Designed and built a multi-agent LLM system that analyzes source code to generate STRIDE-based threat models and prioritized security remediation recommendations",
+        "Developed a 0→1 end-to-end analysis pipeline that ingests Git repositories and produces actionable security insights and visual threat model artifacts",
+        "Iterated rapidly on system design and model outputs based on feedback from security stakeholders, improving accuracy, relevance, and usability in real-world workflows",
+        "Built full-stack infrastructure supporting the platform, including backend services, data pipelines, and frontend interfaces for interacting with analysis results",
+        "Tech: ReactJS, JavaScript/TypeScript, HTML5, CSS3, Node.js, Python, Postgres",
       ],
     },
     {
       title: "Software Engineer",
-      company: "Creative Circle 360 (Contract)",
+      company: "Creative Circle 360 (contract)",
       period: "Apr 2024 – Jun 2025",
       description: [
-        "Built user login and registration flows for a social community platform using React.js and GraphQL.",
-        "Created embedded surveys to match users with relevant communities based on their input.",
-        "Developed a proof of concept integrated with Bettermode to enhance community engagement.",
-        "Tools: ReactJS, Redux, JavaScript, HTML5, CSS3, GraphQL",
+        "Built user login and registration flows for a social community platform using React.js and GraphQL",
+        "Created embedded surveys to match users with relevant communities based on their input",
+        "Developed a proof of concept integrated with Bettermode to enhance community engagement",
+        "Tech: ReactJS, Redux, JavaScript, HTML5, CSS3, GraphQL",
       ],
     },
     {
@@ -102,10 +104,10 @@ const Home = () => {
       company: "Nielsen/Gracenote",
       period: "May 2021 – Nov 2023",
       description: [
-        "Developed the Nielsen One B2B SaaS dashboard application to summarize large data sets.",
-        "Collaborated with designers to create a UI style guide, reducing dev time for new features by 30%.",
-        "Enhanced performance and maintainability using reusable components and optimized rendering.",
-        "Tools: ReactJS, Redux, JavaScript/TypeScript, HTML5, CSS3",
+        "Developed the Nielsen One B2B SaaS dashboard application to summarize large data sets",
+        "Collaborated with designers to create a UI style guide, reducing dev time for new features by 30%",
+        "Enhanced performance and maintainability using reusable components and optimized rendering",
+        "Tech: ReactJS, Redux, JavaScript/TypeScript, HTML5, CSS3",
       ],
     },
     {
@@ -113,10 +115,10 @@ const Home = () => {
       company: "Vungle",
       period: "Jun 2018 – Jun 2020",
       description: [
-        "Migrated legacy dashboards to modern ReactJS architecture, reducing tech debt by 40%.",
-        "Improved filtering and navigation functionality to enhance workflow efficiency by 20%.",
-        "Spearheaded efforts to consolidate UI features into component libraries.",
-        "Tools: ReactJS, Redux, Node.js, JavaScript, HTML5, CSS3",
+        "Migrated legacy dashboards to modern ReactJS architecture, reducing tech debt by 40%",
+        "Improved filtering and navigation functionality to enhance workflow efficiency by 20%",
+        "Spearheaded efforts to consolidate UI features into component libraries",
+        "Tech: ReactJS, Redux, Node.js, JavaScript, HTML5, CSS3",
       ],
     },
     {
@@ -124,10 +126,10 @@ const Home = () => {
       company: "Idean",
       period: "May 2015 – Mar 2018",
       description: [
-        "Developed responsive web applications for clients using modern JavaScript frameworks.",
-        "Collaborated with design teams to implement pixel-perfect UI components.",
-        "Worked on multiple client projects simultaneously, delivering high-quality solutions.",
-        "Tools: ReactJS, JavaScript, HTML5, CSS3, Responsive Design",
+        "Developed responsive web applications for clients using modern JavaScript frameworks",
+        "Collaborated with design teams to implement pixel-perfect UI components",
+        "Worked on multiple client projects simultaneously, delivering high-quality solutions",
+        "Tech: ReactJS, JavaScript, HTML5, CSS3, Responsive Design",
       ],
     },
     {
@@ -135,10 +137,10 @@ const Home = () => {
       company: "various contracts (Autodesk, TitleNine, Compare Networks)",
       period: "Nov 2014 – Mar 2015",
       description: [
-        "Built custom web applications and e-commerce solutions for diverse client needs.",
-        "Developed responsive websites and interactive user interfaces.",
-        "Collaborated with clients to understand requirements and deliver tailored solutions.",
-        "Tools: JavaScript, HTML5, CSS3, jQuery, Responsive Design",
+        "Built custom web applications and e-commerce solutions for diverse client needs",
+        "Developed responsive websites and interactive user interfaces",
+        "Collaborated with clients to understand requirements and deliver tailored solutions",
+        "Tech: JavaScript, HTML5, CSS3, jQuery, Responsive Design",
       ],
     },
   ];
@@ -146,7 +148,7 @@ const Home = () => {
   const technicalSkills = [
     {
       category: "Languages",
-      items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
+      items: ["JavaScript/TypeScript", "Python", "HTML5", "CSS3"],
     },
     {
       category: "Frameworks/Libraries",
@@ -164,17 +166,18 @@ const Home = () => {
       items: [
         "Git",
         "Docker",
+        "Kubernetes",
+        "AI Tools (Claude, Codex, Opencode, Copilot, Cursor)",
         "Vite",
         "Webpack",
         "Figma",
         "Chrome DevTools",
         "GitHub",
-        "AI Tools (Copilot, Cursor, ChatGPT)",
       ],
     },
     {
       category: "Testing",
-      items: ["Jasmine", "Jest", "React Testing Library"],
+      items: ["Jasmine", "Jest", "Playwright"],
     },
     {
       category: "Other",
@@ -203,16 +206,14 @@ const Home = () => {
             >
               Hi, my name is
             </p>
-            <h1 className="hero-title">Marcus Freemon.</h1>
+            <h1 className="hero-title">Marcus Freemon</h1>
             <h2 className="hero-subtitle">I build things for the web.</h2>
             <p className="hero-description">
-              Software Engineer with 9+ years of experience specializing in
-              modern front-end development using HTML, CSS,
-              JavaScript/TypeScript and frontend frameworks like React, Angular,
-              & Vue. Proven track record of delivering scalable and responsive
-              web applications in Agile environments. Passionate about UI/UX,
-              clean code, and performance optimization. Comfortable working
-              full-stack and collaborating cross-functionally.
+              Senior Software Engineer with 10+ years of experience building scalable
+              web applications and end-to-end systems. Strong background in React, Node.js,
+              and full-stack development, with a track record of delivering high-impact
+              solutions in fast-paced environments. Recently focused on AI-driven workflows,
+              including LLM-powered security analysis and automation pipelines.
             </p>
             {/* <div className="hero-actions">
               <Link to="/work" className="btn btn-primary">
